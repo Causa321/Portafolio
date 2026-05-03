@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Junior | Full Stack Developer</title>
+  <meta name="description" content="Portafolio de Junior, Full Stack Developer. Mostrando mis proyectos web.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="welcome-title">
+          <span class="greeting">Hola, soy</span><br/>
+          <span class="name">Junior</span>
+        </h1>
+        <h2 class="role">Full Stack Developer</h2>
+        <p class="intro-blurb" id="intro-text">
+          Apasionado por la tecnología y la creación de interfaces limpias, modernas y dinámicas. 
+          Combino el desarrollo Frontend y Backend para construir soluciones completas y escalables con una excelente experiencia de usuario.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver mis Proyectos</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="glass-sphere"></div>
+        <div class="glass-sphere-small"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SVG Curve Divider -->
+  <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1487 79 1487 79V0H-100V79Z" fill="#0B0914"></path>
+  </svg>
+
+  <!-- Projects Section -->
+  <section class="projects" id="proyectos">
+    <div class="projects-header">
+      <h2>Mis Proyectos</h2>
+      <p>Una selección del trabajo que he realizado.</p>
+    </div>
+
+    <div class="project-grid" id="project-grid">
+      <!-- Projects will be injected here via JS -->
+    </div>
+  </section>
+
+  <!-- SVG Curve Divider -->
+  <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1487 79 1487 79V0H-100V79Z" fill="#0B0914"></path>
+  </svg>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="planes">
+    <div class="pricing-header">
+      <h2>Planes y Servicios</h2>
+      <p>Suscripciones mensuales para el mantenimiento, soporte y desarrollo continuo de tus sistemas.</p>
+    </div>
+    
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Básico</h3>
+        <div class="price"><span>$</span>50<span>/mes</span></div>
+        <p class="pricing-desc">Ideal para landing pages y sitios informativos.</p>
+        <ul class="pricing-features">
+          <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Hosting incluido (AWS)</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Monitoreo 24/7</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Actualizaciones de seguridad</li>
+          <li class="disabled"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"></path></svg> Mantenimiento de Base de Datos</li>
+        </ul>
+        <a href="#contacto" class="btn btn-outline" style="width: 100%;">Elegir Plan</a>
+      </div>
+
+      <div class="pricing-card popular">
+        <div class="popular-badge">Más Recomendado</div>
+        <h3>Pro</h3>
+        <div class="price"><span>$</span>150<span>/mes</span></div>
+        <p class="pricing-desc">Perfecto para tiendas online y sistemas medianos.</p>
+        <ul class="pricing-features">
+          <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Todo lo del Básico</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Respaldos semanales</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Mantenimiento de BD</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> 2 hrs de nuevas mejoras al mes</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary" style="width: 100%;">Elegir Plan</a>
+      </div>
+
+      <div class="pricing-card">
+        <h3>Enterprise</h3>
+        <div class="price"><span style="font-size: 2rem;">A medida</span></div>
+        <p class="pricing-desc">Para plataformas complejas o en alto crecimiento.</p>
+        <ul class="pricing-features">
+          <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Arquitectura Serverless AWS</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Tiempo de respuesta prioritario</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Desarrollo full stack continuo</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Optimizaciones de costos</li>
+        </ul>
+        <a href="#contacto" class="btn btn-outline" style="width: 100%;">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SVG Curve Divider -->
+  <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="background: var(--bg-color);">
+    <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1487 79 1487 79V0H-100V79Z" fill="#141124"></path>
+  </svg>
+
+  <!-- CV Section -->
+  <section class="cv-section" id="cv">
+    <div class="cv-inner">
+      <div class="cv-text">
+        <h2>Mi Currículum</h2>
+        <p>Revisa mi trayectoria, experiencia laboral y educación.</p>
+      </div>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <a href="./Cv.pdf" class="btn btn-primary" download="Junior_CV.pdf">
+          Descargar CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SVG Curve Divider -->
+  <svg class="svg-curve reverse-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M-100 0C-100 0 218.416 55.835 693.5 55.835C1168.58 55.835 1487 0 1487 0V79H-100V0Z" fill="#0B0914"></path>
+  </svg>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-copy">
+        &copy; <span id="year"></span> Junior - Full Stack Developer
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/junior" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/junior" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0zM7.12 20.452H3.56V9h3.56v11.452zM5.34 7.434c-1.138 0-2.062-.924-2.062-2.062 0-1.138.924-2.062 2.062-2.062 1.138 0 2.062.924 2.062 2.062 0 1.138-.924 2.062-2.062 2.062zm15.112 13.018h-3.558v-5.569c0-1.327-.024-3.037-1.848-3.037-1.85 0-2.133 1.445-2.133 2.938v5.668H9.36V9h3.414v1.565h.049c.475-.9 1.636-1.848 3.364-1.848 3.598 0 4.262 2.368 4.262 5.455v6.28z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
