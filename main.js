@@ -60,4 +60,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
     projectGrid.appendChild(card);
   });
+
+  // Form Handling
+  const contactForm = document.getElementById('registration-form');
+  const formStatus = document.getElementById('form-status');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const formStatus = document.getElementById('form-status');
+      
+      const data = {
+        nombre: document.getElementById('nombre').value,
+        email: document.getElementById('email').value,
+        mensaje: document.getElementById('mensaje').value,
+        asunto: document.getElementById('subject').value // Opcional, pero útil
+      };
+
+      formStatus.textContent = 'Enviando a AWS...';
+      formStatus.className = 'form-status';
+
+      try {
+        // Nota: He convertido el ARN proporcionado a una URL de API Gateway válida
+        const response = await fetch('https://0upxmogtqj.execute-api.us-east-1.amazonaws.com/f3jwb4n', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+          formStatus.textContent = '¡Datos guardados en AWS con éxito!';
+          formStatus.className = 'form-status success';
+          contactForm.reset();
+        } else {
+          throw new Error('Error en la respuesta del servidor');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        formStatus.textContent = 'Hubo un error al enviar los datos. Inténtalo de nuevo.';
+        formStatus.className = 'form-status error';
+      }
+
+      // Limpiar mensaje después de 5 segundos
+      setTimeout(() => {
+        formStatus.textContent = '';
+        formStatus.className = 'form-status';
+      }, 5000);
+    });
+  }
 });
